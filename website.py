@@ -16,7 +16,7 @@ def local_css(file):
     with open(file) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-st.set_page_config(page_title="Crypto Recover", page_icon=":key:", layout="wide")
+st.set_page_config(page_title="Crypto Recover", page_icon=":key:")
 local_css("style/style.css")
 
 selected = option_menu(
